@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>create</operation>
+        <source_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-05-20 05:29:31</sys_created_on>
+        <sys_id>749621d91b1e4e90c19ca7d6b04bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_bom_clo_b2b_contact_service</sys_name>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sys_scope_privilege_749621d91b1e4e90c19ca7d6b04bcbea</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-05-20 05:29:31</sys_updated_on>
+        <target_name>sn_bom_clo_b2b_contact_service</target_name>
+        <target_scope display_value="Financial Services Business Lifecycle">cce04d3053132010ba9dddeeff7b125a</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>

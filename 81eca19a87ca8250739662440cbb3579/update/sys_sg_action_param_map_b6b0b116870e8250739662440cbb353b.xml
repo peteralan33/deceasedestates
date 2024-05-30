@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="New Button (Supplier)">b2b0b116870e8250739662440cbb3534</button>
+        <item_parameter display_value="Supplier country">fab0b116870e8250739662440cbb3530</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-10 22:32:08</sys_created_on>
+        <sys_id>b6b0b116870e8250739662440cbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>fab0b116870e8250739662440cbb3530</sys_name>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_b6b0b116870e8250739662440cbb353b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 22:32:08</sys_updated_on>
+        <ui_parameter display_value="Country">7ab0b116870e8250739662440cbb3537</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

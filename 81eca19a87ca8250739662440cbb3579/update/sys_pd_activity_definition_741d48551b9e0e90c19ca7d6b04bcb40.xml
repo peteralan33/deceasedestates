@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_pd_activity_definition">
+    <sys_pd_activity_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <activity_type/>
+        <badge/>
+        <category/>
+        <description/>
+        <experience_display_preferences/>
+        <input_display_preferences/>
+        <inputs/>
+        <label>Create broker records</label>
+        <name>create_broker_records</name>
+        <outputs/>
+        <source>d6554ac11b9aca90c19ca7d6b04bcb91</source>
+        <source_type>sys_hub_flow</source_type>
+        <sys_class_name>sys_pd_activity_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 22:59:11</sys_created_on>
+        <sys_id>741d48551b9e0e90c19ca7d6b04bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create broker records</sys_name>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sys_pd_activity_definition_741d48551b9e0e90c19ca7d6b04bcb40</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 22:59:11</sys_updated_on>
+        <system_level>false</system_level>
+        <table>global</table>
+        <type_vals/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_pd_activity_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=741d48551b9e0e90c19ca7d6b04bcb40"/>
+    <sys_variable_value action="delete_multiple" query="document_key=741d48551b9e0e90c19ca7d6b04bcb40"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_input_d6554ac11b9aca90c19ca7d6b04bcb91^id=741d48551b9e0e90c19ca7d6b04bcb40"/>
+</record_update>

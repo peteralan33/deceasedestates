@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="7bb3409d1b1e0e90c19ca7d6b04bcb87" sys_domain="global" table="sn_fin_supplier" version="3" view="Duplicate_check">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>legal_name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 22:19:35</sys_created_on>
+            <sys_id>0b2440dd1b1e0e90c19ca7d6b04bcbe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_fin_supplier" sys_domain="global" view="3fb3409d1b1e0e90c19ca7d6b04bcb82">7bb3409d1b1e0e90c19ca7d6b04bcb87</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 22:19:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_snc_pab_sup_mgt_duplicate_check</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 22:19:35</sys_created_on>
+            <sys_id>472440dd1b1e0e90c19ca7d6b04bcbe8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_fin_supplier" sys_domain="global" view="3fb3409d1b1e0e90c19ca7d6b04bcb82">7bb3409d1b1e0e90c19ca7d6b04bcb87</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 22:19:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 22:19:35</sys_created_on>
+            <sys_id>4f2440dd1b1e0e90c19ca7d6b04bcbe8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_fin_supplier" sys_domain="global" view="3fb3409d1b1e0e90c19ca7d6b04bcb82">7bb3409d1b1e0e90c19ca7d6b04bcb87</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 22:19:35</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>customer_number</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 22:19:35</sys_created_on>
+            <sys_id>472440dd1b1e0e90c19ca7d6b04bcbe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_fin_supplier" sys_domain="global" view="3fb3409d1b1e0e90c19ca7d6b04bcb82">7bb3409d1b1e0e90c19ca7d6b04bcb87</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 22:19:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>sn_fin_supplier</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 22:17:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7bb3409d1b1e0e90c19ca7d6b04bcb87</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_fin_supplier</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+            <sys_update_name>sys_ui_section_7bb3409d1b1e0e90c19ca7d6b04bcb87</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 22:17:44</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Duplicate check" name="Duplicate_check">3fb3409d1b1e0e90c19ca7d6b04bcb82</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

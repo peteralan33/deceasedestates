@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>Review_documents</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-20 04:20:57</sys_created_on>
+        <sys_id>6ce691511b9a4e90c19ca7d6b04bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Review documents</sys_name>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sys_ui_view_6ce691511b9a4e90c19ca7d6b04bcb40</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-20 04:20:57</sys_updated_on>
+        <title>Review documents</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

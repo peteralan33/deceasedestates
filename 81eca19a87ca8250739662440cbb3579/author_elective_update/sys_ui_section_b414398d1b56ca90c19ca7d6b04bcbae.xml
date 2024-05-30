@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Account information" section_id="b414398d1b56ca90c19ca7d6b04bcbae" sys_domain="global" table="sn_bom_clo_b2b_account_service" version="3" view="Broker_Details">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>account_name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+            <sys_id>0914398d1b56ca90c19ca7d6b04bcbea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>doing_business_as</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+            <sys_id>8514398d1b56ca90c19ca7d6b04bcbeb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>previous_names</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+            <sys_id>8d14398d1b56ca90c19ca7d6b04bcbeb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>entity_type</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+            <sys_id>8514398d1b56ca90c19ca7d6b04bcbec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>business_type</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+            <sys_id>8d14398d1b56ca90c19ca7d6b04bcbec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>industry</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+            <sys_id>c914798d1b56ca90c19ca7d6b04bcb12</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+            <sys_id>c114798d1b56ca90c19ca7d6b04bcb13</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>business_identifier_code</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+            <sys_id>c914798d1b56ca90c19ca7d6b04bcb13</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>country_of_incorporation</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+            <sys_id>c114798d1b56ca90c19ca7d6b04bcb14</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_of_incorporation</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+            <sys_id>c914798d1b56ca90c19ca7d6b04bcb14</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>annual_revenue</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+            <sys_id>c114798d1b56ca90c19ca7d6b04bcb15</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>website</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+            <sys_id>c914798d1b56ca90c19ca7d6b04bcb15</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>relationship_manager</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+            <sys_id>c114798d1b56ca90c19ca7d6b04bcb16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Account information</caption>
+            <header>false</header>
+            <name>sn_bom_clo_b2b_account_service</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 11:50:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b414398d1b56ca90c19ca7d6b04bcbae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_bom_clo_b2b_account_service</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+            <sys_update_name>sys_ui_section_b414398d1b56ca90c19ca7d6b04bcbae</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 11:50:01</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Broker Details" name="Broker_Details">7c14398d1b56ca90c19ca7d6b04bcba8</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</application>
+        <file_path/>
+        <instance_id>1e00421edbc9ced437d72a5913961978</instance_id>
+        <instance_name>pabbankwash</instance_name>
+        <name>sys_ui_section_b414398d1b56ca90c19ca7d6b04bcbae</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Account information" section_id="b414398d1b56ca90c19ca7d6b04bcbae" sys_domain="global" table="sn_bom_clo_b2b_account_service" version="3" view="Broker_Details"><sys_ui_element action="INSERT_OR_UPDATE"><element>account_name</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:02</sys_created_on><sys_id>0914398d1b56ca90c19ca7d6b04bcbea</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:02</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>doing_business_as</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:02</sys_created_on><sys_id>8514398d1b56ca90c19ca7d6b04bcbeb</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:02</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>previous_names</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:02</sys_created_on><sys_id>8d14398d1b56ca90c19ca7d6b04bcbeb</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:02</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>entity_type</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:02</sys_created_on><sys_id>8514398d1b56ca90c19ca7d6b04bcbec</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:02</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>business_type</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:02</sys_created_on><sys_id>8d14398d1b56ca90c19ca7d6b04bcbec</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:02</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>industry</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:02</sys_created_on><sys_id>c914798d1b56ca90c19ca7d6b04bcb12</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:02</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:02</sys_created_on><sys_id>c114798d1b56ca90c19ca7d6b04bcb13</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:02</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>business_identifier_code</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:02</sys_created_on><sys_id>c914798d1b56ca90c19ca7d6b04bcb13</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:02</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>country_of_incorporation</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:02</sys_created_on><sys_id>c114798d1b56ca90c19ca7d6b04bcb14</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:02</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>date_of_incorporation</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:02</sys_created_on><sys_id>c914798d1b56ca90c19ca7d6b04bcb14</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:02</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>annual_revenue</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:02</sys_created_on><sys_id>c114798d1b56ca90c19ca7d6b04bcb15</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:02</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>website</element><position>11</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:02</sys_created_on><sys_id>c914798d1b56ca90c19ca7d6b04bcb15</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:02</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>relationship_manager</element><position>12</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:02</sys_created_on><sys_id>c114798d1b56ca90c19ca7d6b04bcb16</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Account information" display_value="Account information" name="sn_bom_clo_b2b_account_service" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">b414398d1b56ca90c19ca7d6b04bcbae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:02</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Account information</caption><header>false</header><name>sn_bom_clo_b2b_account_service</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-19 11:50:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b414398d1b56ca90c19ca7d6b04bcbae</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sn_bom_clo_b2b_account_service</sys_name><sys_overrides/><sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package><sys_policy/><sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope><sys_update_name>sys_ui_section_b414398d1b56ca90c19ca7d6b04bcbae</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-19 11:50:01</sys_updated_on><sys_user/><title>false</title><view display_value="Broker Details" name="Broker_Details">7c14398d1b56ca90c19ca7d6b04bcba8</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1945832756</payload_hash>
+        <record_name>Account Lifecycle Service Case</record_name>
+        <reverted_from/>
+        <source>cdeca59a87ca8250739662440cbb352e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:50:02</sys_created_on>
+        <sys_id>c114798d1b56ca90c19ca7d6b04bcb19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f90aff79c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:50:02</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>4914798dbd56ca90b35e4310b3e51d18</update_guid>
+        <update_guid_history>4914798dbd56ca90b35e4310b3e51d18:1945832756</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:09:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>130630c7be934d808d9e664beecdb440</sys_id>
+        <sys_metadata>b414398d1b56ca90c19ca7d6b04bcbae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Account information</sys_name>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_parent display_value="Account Lifecycle Service Case">83f088c8879d8a1021dca9770cbb3595</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_scope_delete display_value="">4c5d46935a2b4f54af89111433ca2544</sys_scope_delete>
+        <sys_update_name>sys_ui_section_b414398d1b56ca90c19ca7d6b04bcbae</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_b414398d1b56ca90c19ca7d6b04bcbae">c114798d1b56ca90c19ca7d6b04bcb19</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:09:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

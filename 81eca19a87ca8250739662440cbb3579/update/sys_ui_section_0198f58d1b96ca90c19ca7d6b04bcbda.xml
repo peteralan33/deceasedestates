@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Broker details" section_id="0198f58d1b96ca90c19ca7d6b04bcbda" sys_domain="global" table="x_snc_pab_sup_mgt_lifecycle_case" version="3" view="Broker_Details">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>aggregator</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:34:48</sys_created_on>
+            <sys_id>385ef9091b1aca90c19ca7d6b04bcbb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Broker details" display_value="Broker details" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">0198f58d1b96ca90c19ca7d6b04bcbda</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:34:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>business_name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:34:48</sys_created_on>
+            <sys_id>745ef9091b1aca90c19ca7d6b04bcbb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Broker details" display_value="Broker details" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">0198f58d1b96ca90c19ca7d6b04bcbda</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:34:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>doing_business_as</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:34:48</sys_created_on>
+            <sys_id>7c5ef9091b1aca90c19ca7d6b04bcbb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Broker details" display_value="Broker details" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">0198f58d1b96ca90c19ca7d6b04bcbda</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:34:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>previous_business_name</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:34:48</sys_created_on>
+            <sys_id>745ef9091b1aca90c19ca7d6b04bcbb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Broker details" display_value="Broker details" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">0198f58d1b96ca90c19ca7d6b04bcbda</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:34:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>business_type</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:34:48</sys_created_on>
+            <sys_id>7c5ef9091b1aca90c19ca7d6b04bcbb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Broker details" display_value="Broker details" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">0198f58d1b96ca90c19ca7d6b04bcbda</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:34:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:34:48</sys_created_on>
+            <sys_id>745ef9091b1aca90c19ca7d6b04bcbba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Broker details" display_value="Broker details" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">0198f58d1b96ca90c19ca7d6b04bcbda</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:34:48</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>abn</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:34:48</sys_created_on>
+            <sys_id>7c5ef9091b1aca90c19ca7d6b04bcbba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Broker details" display_value="Broker details" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">0198f58d1b96ca90c19ca7d6b04bcbda</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:34:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>acn</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:34:48</sys_created_on>
+            <sys_id>745ef9091b1aca90c19ca7d6b04bcbbb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Broker details" display_value="Broker details" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">0198f58d1b96ca90c19ca7d6b04bcbda</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:34:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>credit_license</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:34:48</sys_created_on>
+            <sys_id>7c5ef9091b1aca90c19ca7d6b04bcbbb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Broker details" display_value="Broker details" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">0198f58d1b96ca90c19ca7d6b04bcbda</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:34:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_of_incorporation</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:34:48</sys_created_on>
+            <sys_id>745ef9091b1aca90c19ca7d6b04bcbbc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Broker details" display_value="Broker details" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="7c14398d1b56ca90c19ca7d6b04bcba8">0198f58d1b96ca90c19ca7d6b04bcbda</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:34:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Broker details</caption>
+            <header>false</header>
+            <name>x_snc_pab_sup_mgt_lifecycle_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:09:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0198f58d1b96ca90c19ca7d6b04bcbda</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>x_snc_pab_sup_mgt_lifecycle_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+            <sys_update_name>sys_ui_section_0198f58d1b96ca90c19ca7d6b04bcbda</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:19:01</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Broker Details" name="Broker_Details">7c14398d1b56ca90c19ca7d6b04bcba8</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

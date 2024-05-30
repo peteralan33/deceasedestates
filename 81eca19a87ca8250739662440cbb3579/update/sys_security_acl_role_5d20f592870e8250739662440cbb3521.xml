@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-10 22:29:33</sys_created_on>
+        <sys_id>5d20f592870e8250739662440cbb3521</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_pab_sup_mgt_contact_lifecycle_case.sn_bom_clo_b2c.manager</sys_name>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_security_acl display_value="x_snc_pab_sup_mgt_contact_lifecycle_case">0920f592870e8250739662440cbb351a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_5d20f592870e8250739662440cbb3521</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 22:29:33</sys_updated_on>
+        <sys_user_role display_value="sn_bom_clo_b2c.manager" name="sn_bom_clo_b2c.manager">ac555e28c3103010ded3544c1840dd68</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

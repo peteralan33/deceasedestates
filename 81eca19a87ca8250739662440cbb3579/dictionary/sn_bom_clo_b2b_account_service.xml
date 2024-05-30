@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true,timeFromCreateToActivate=48455569000" audit="true" db_object_id="83f088c8879d8a1021dca9770cbb3595" extends="sn_bom_clo_b2b_base" label="Account Lifecycle Service Case" max_length="40" name="sn_bom_clo_b2b_account_service" type="collection">
+        <element label="acn" max_length="40" name="x_snc_pab_sup_mgt_acn" type="string"/>
+        <element label="Australian Business Number" max_length="40" name="x_snc_pab_sup_mgt_austr" type="string"/>
+        <element label="Australian Credit License" max_length="40" name="x_snc_pab_sup_mgt_credit_lic" type="string"/>
+    </element>
+</database>

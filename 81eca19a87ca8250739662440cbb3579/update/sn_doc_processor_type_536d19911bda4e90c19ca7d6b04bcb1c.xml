@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_processor_type">
+    <sn_doc_processor_type action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <external_id/>
+        <state/>
+        <sys_class_name>sn_doc_processor_type</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-20 04:49:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>536d19911bda4e90c19ca7d6b04bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Provided document</sys_name>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sn_doc_processor_type_536d19911bda4e90c19ca7d6b04bcb1c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-20 04:49:39</sys_updated_on>
+        <type>Provided document</type>
+    </sn_doc_processor_type>
+</record_update>

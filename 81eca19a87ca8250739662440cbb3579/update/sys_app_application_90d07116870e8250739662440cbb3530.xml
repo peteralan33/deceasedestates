@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="">Custom Applications</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order/>
+        <roles>sn_bom_clo_b2b.account_lifecycle_agent,sn_bom_clo_b2b.account_lifecycle_viewer,sn_bom_clo_b2b.admin,sn_bom_clo_b2b.agent_connector,sn_bom_clo_b2b.contact_lifecycle_agent,sn_bom_clo_b2b.contact_lifecycle_viewer,sn_bom_clo_b2b.contributor,sn_bom_clo_b2b.manager,sn_bom_clo_b2c.admin,sn_bom_clo_b2c.agent,sn_bom_clo_b2c.agent_connector,sn_bom_clo_b2c.contributor,sn_bom_clo_b2c.manager,sn_bom_clo_b2c.viewer,sn_slm.admin,sn_slm.agent,sn_slm.contact,sn_slm.fulfiller,sn_slm.manager,sn_slm.owner</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-10 22:32:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>90d07116870e8250739662440cbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Supplier Management</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sys_app_application_90d07116870e8250739662440cbb3530</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 22:32:30</sys_updated_on>
+        <title>Supplier Management</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

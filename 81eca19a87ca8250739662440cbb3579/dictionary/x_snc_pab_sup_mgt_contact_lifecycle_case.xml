@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="da107192870e8250739662440cbb3583" extends="sn_bom_clo_b2b_base" label="Broker Contact Lifecycle Case" max_length="40" name="x_snc_pab_sup_mgt_contact_lifecycle_case" type="collection"/>
+</database>

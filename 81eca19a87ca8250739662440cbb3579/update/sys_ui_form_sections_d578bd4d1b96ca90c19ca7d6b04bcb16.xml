@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="d578bd4d1b96ca90c19ca7d6b04bcb16" sys_domain="global" table="x_snc_pab_sup_mgt_lifecycle_case" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:09:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6978bd4d1b96ca90c19ca7d6b04bcb5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_pab_sup_mgt_lifecycle_case" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="118f0e9e1b010210d7f72137b04bcb94">d578bd4d1b96ca90c19ca7d6b04bcb16</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="118f0e9e1b010210d7f72137b04bcb94">6d78bd4d1b96ca90c19ca7d6b04bcb42</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:09:11</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:09:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2978bd4d1b96ca90c19ca7d6b04bcb3b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_pab_sup_mgt_lifecycle_case" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="118f0e9e1b010210d7f72137b04bcb94">d578bd4d1b96ca90c19ca7d6b04bcb16</sys_ui_form>
+            <sys_ui_section caption="Customer Details" display_value="Customer Details" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="118f0e9e1b010210d7f72137b04bcb94">9978bd4d1b96ca90c19ca7d6b04bcb19</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:09:11</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:09:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b978bd4d1b96ca90c19ca7d6b04bcb77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_pab_sup_mgt_lifecycle_case" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="118f0e9e1b010210d7f72137b04bcb94">d578bd4d1b96ca90c19ca7d6b04bcb16</sys_ui_form>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="118f0e9e1b010210d7f72137b04bcb94">f978bd4d1b96ca90c19ca7d6b04bcb6f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:09:12</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:09:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7578bd4d1b96ca90c19ca7d6b04bcb6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_pab_sup_mgt_lifecycle_case" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="118f0e9e1b010210d7f72137b04bcb94">d578bd4d1b96ca90c19ca7d6b04bcb16</sys_ui_form>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="118f0e9e1b010210d7f72137b04bcb94">ed78bd4d1b96ca90c19ca7d6b04bcb5a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:09:12</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:09:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e578bd4d1b96ca90c19ca7d6b04bcb42</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_pab_sup_mgt_lifecycle_case" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="118f0e9e1b010210d7f72137b04bcb94">d578bd4d1b96ca90c19ca7d6b04bcb16</sys_ui_form>
+            <sys_ui_section caption="Major Case Information" display_value="Major Case Information" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="118f0e9e1b010210d7f72137b04bcb94">a178bd4d1b96ca90c19ca7d6b04bcb3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:09:11</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:09:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b178bd4d1b96ca90c19ca7d6b04bcbca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_pab_sup_mgt_lifecycle_case" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="118f0e9e1b010210d7f72137b04bcb94">d578bd4d1b96ca90c19ca7d6b04bcb16</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_pab_sup_mgt_lifecycle_case" sys_domain="global" view="118f0e9e1b010210d7f72137b04bcb94">3178bd4d1b96ca90c19ca7d6b04bcb78</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:09:12</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_pab_sup_mgt_lifecycle_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-19 12:09:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d578bd4d1b96ca90c19ca7d6b04bcb16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_pab_sup_mgt_lifecycle_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+            <sys_update_name>sys_ui_form_sections_d578bd4d1b96ca90c19ca7d6b04bcb16</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-19 12:09:10</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace" name="workspace">118f0e9e1b010210d7f72137b04bcb94</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

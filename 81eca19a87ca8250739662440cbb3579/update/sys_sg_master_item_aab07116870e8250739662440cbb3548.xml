@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>vm_vdr_contact</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="Vendor Contact Form Screen">e6b07116870e8250739662440cbb3546</embedded_screen>
+        <item_view/>
+        <name>Vendor Contact master_item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-10 22:32:06</sys_created_on>
+        <sys_id>aab07116870e8250739662440cbb3548</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vendor Contact master_item</sys_name>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sys_sg_master_item_aab07116870e8250739662440cbb3548</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 22:32:06</sys_updated_on>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="Vendor Contact List Screen View Config">12b03116870e8250739662440cbb35c1</view_config>
+    </sys_sg_master_item>
+</record_update>

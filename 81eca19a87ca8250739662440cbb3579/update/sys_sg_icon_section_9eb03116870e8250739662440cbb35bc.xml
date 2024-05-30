@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_icon_section">
+    <sys_sg_icon_section action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applets>c2b03116870e8250739662440cbb3571</applets>
+        <card_size/>
+        <column_count/>
+        <custom_height/>
+        <custom_width/>
+        <data_item/>
+        <display_feed_count>false</display_feed_count>
+        <hide_header>false</hide_header>
+        <hide_section_if_empty>false</hide_section_if_empty>
+        <is_custom_size>false</is_custom_size>
+        <is_hidden_preference_name/>
+        <orientation>horizontal</orientation>
+        <required_roles>sn_bom_clo_b2b.account_lifecycle_agent,sn_bom_clo_b2b.account_lifecycle_viewer,sn_bom_clo_b2b.admin,sn_bom_clo_b2b.agent_connector,sn_bom_clo_b2b.contact_lifecycle_agent,sn_bom_clo_b2b.contact_lifecycle_viewer,sn_bom_clo_b2b.contributor,sn_bom_clo_b2b.manager,sn_bom_clo_b2c.admin,sn_bom_clo_b2c.agent,sn_bom_clo_b2c.agent_connector,sn_bom_clo_b2c.contributor,sn_bom_clo_b2c.manager,sn_bom_clo_b2c.viewer,sn_slm.admin,sn_slm.agent,sn_slm.contact,sn_slm.fulfiller,sn_slm.manager,sn_slm.owner</required_roles>
+        <row_count/>
+        <sys_class_name>sys_sg_icon_section</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-10 22:32:05</sys_created_on>
+        <sys_id>9eb03116870e8250739662440cbb35bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Supplier Contact Lifecycle Case</sys_name>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sys_sg_icon_section_9eb03116870e8250739662440cbb35bc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 22:32:05</sys_updated_on>
+        <table/>
+        <title>Supplier Contact Lifecycle Case</title>
+        <visible_condition/>
+        <wide_column_count/>
+    </sys_sg_icon_section>
+</record_update>

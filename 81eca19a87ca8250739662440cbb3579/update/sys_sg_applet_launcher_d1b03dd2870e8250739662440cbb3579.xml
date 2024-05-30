@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher">
+    <sys_sg_applet_launcher action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <available_offline>false</available_offline>
+        <header_button/>
+        <header_titles/>
+        <hide_empty_sections>true</hide_empty_sections>
+        <name>Supplier Management</name>
+        <required_roles>sn_bom_clo_b2b.account_lifecycle_agent,sn_bom_clo_b2b.account_lifecycle_viewer,sn_bom_clo_b2b.admin,sn_bom_clo_b2b.agent_connector,sn_bom_clo_b2b.contact_lifecycle_agent,sn_bom_clo_b2b.contact_lifecycle_viewer,sn_bom_clo_b2b.contributor,sn_bom_clo_b2b.manager,sn_bom_clo_b2c.admin,sn_bom_clo_b2c.agent,sn_bom_clo_b2c.agent_connector,sn_bom_clo_b2c.contributor,sn_bom_clo_b2c.manager,sn_bom_clo_b2c.viewer,sn_slm.admin,sn_slm.agent,sn_slm.contact,sn_slm.fulfiller,sn_slm.manager,sn_slm.owner</required_roles>
+        <search_config/>
+        <sys_class_name>sys_sg_applet_launcher</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-10 22:32:01</sys_created_on>
+        <sys_id>d1b03dd2870e8250739662440cbb3579</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Supplier Management</sys_name>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_d1b03dd2870e8250739662440cbb3579</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 22:32:01</sys_updated_on>
+        <title>Supplier Management</title>
+    </sys_sg_applet_launcher>
+</record_update>

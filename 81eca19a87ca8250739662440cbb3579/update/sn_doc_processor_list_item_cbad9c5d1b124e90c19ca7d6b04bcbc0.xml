@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_processor_list_item">
+    <sn_doc_processor_list_item action="INSERT_OR_UPDATE">
+        <can_request_deferment>false</can_request_deferment>
+        <can_request_exception>false</can_request_exception>
+        <category display_value="Proof of Australian Credit Repersentative">b6bd149d1b124e90c19ca7d6b04bcbb7</category>
+        <document_list display_value="Broker onbaording documents">006cd4d91b124e90c19ca7d6b04bcb16</document_list>
+        <document_template/>
+        <document_type/>
+        <has_fillable_document>false</has_fillable_document>
+        <mandatory>true</mandatory>
+        <name>Broker onbaording documents - Proof of Australian Credit Repersentative</name>
+        <no_of_documents>1</no_of_documents>
+        <ocr_processing_needed>false</ocr_processing_needed>
+        <sys_class_name>sn_doc_processor_list_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-20 00:11:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>cbad9c5d1b124e90c19ca7d6b04bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Broker onbaording documents - Proof of Australian Credit Repersentative</sys_name>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sn_doc_processor_list_item_cbad9c5d1b124e90c19ca7d6b04bcbc0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-20 00:11:57</sys_updated_on>
+        <use_existing_document>false</use_existing_document>
+    </sn_doc_processor_list_item>
+</record_update>

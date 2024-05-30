@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_bom_service_definition">
+    <sn_bom_service_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <case_type/>
+        <category display_value="Broker Services">b4e0ed8d1b92ca90c19ca7d6b04bcb3f</category>
+        <description/>
+        <id>obo</id>
+        <image/>
+        <name>Onboard broker organisation</name>
+        <order>100</order>
+        <playbook_record_generator/>
+        <service_organizations_offering_service>all_service_organizations</service_organizations_offering_service>
+        <service_type>3</service_type>
+        <show_in_interceptor>true</show_in_interceptor>
+        <sys_class_name>sn_bom_service_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 21:33:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a3a5378d1b9a0e90c19ca7d6b04bcb77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Onboard broker organisation</sys_name>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sn_bom_service_definition_a3a5378d1b9a0e90c19ca7d6b04bcb77</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 21:33:45</sys_updated_on>
+        <table>x_snc_pab_sup_mgt_lifecycle_case</table>
+        <task_table>x_snc_pab_sup_mgt_lifecycle_case</task_table>
+        <template>short_description=Onboard broker organisation^EQ</template>
+    </sn_bom_service_definition>
+</record_update>

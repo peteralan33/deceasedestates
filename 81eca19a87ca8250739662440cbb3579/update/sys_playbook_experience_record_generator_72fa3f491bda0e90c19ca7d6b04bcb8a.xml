@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_playbook_experience_record_generator">
+    <sys_playbook_experience_record_generator action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <create_record_activity_name>Capture entity detials</create_record_activity_name>
+        <create_record_form_view display_value="Broker Details" name="Broker_Details">7c14398d1b56ca90c19ca7d6b04bcba8</create_record_form_view>
+        <order>0</order>
+        <process_definition display_value="Onboard broker organisation">d545b34d1b9a0e90c19ca7d6b04bcb36</process_definition>
+        <sys_class_name>sys_playbook_experience_record_generator</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 21:43:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>72fa3f491bda0e90c19ca7d6b04bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_pab_sup_mgt_lifecycle_case</sys_name>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sys_playbook_experience_record_generator_72fa3f491bda0e90c19ca7d6b04bcb8a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 21:43:32</sys_updated_on>
+        <table>x_snc_pab_sup_mgt_lifecycle_case</table>
+        <template_fields>short_description=Onboard broker organisation^service_definition=a3a5378d1b9a0e90c19ca7d6b04bcb77^EQ</template_fields>
+    </sys_playbook_experience_record_generator>
+    <sys_translated_text action="delete_multiple" query="documentkey=72fa3f491bda0e90c19ca7d6b04bcb8a"/>
+</record_update>

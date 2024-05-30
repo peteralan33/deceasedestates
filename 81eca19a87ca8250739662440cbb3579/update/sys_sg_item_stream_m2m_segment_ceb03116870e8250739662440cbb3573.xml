@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_segment">
+    <sys_sg_item_stream_m2m_segment action="INSERT_OR_UPDATE">
+        <item_stream display_value="Supplier Contact Lifecycle Case Item Stream">0ab03116870e8250739662440cbb3573</item_stream>
+        <segment display_value="Supplier Contact Lifecycle Case Item Stream Segment">42b03116870e8250739662440cbb3573</segment>
+        <sys_class_name>sys_sg_item_stream_m2m_segment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-10 22:32:04</sys_created_on>
+        <sys_id>ceb03116870e8250739662440cbb3573</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_segment_ceb03116870e8250739662440cbb3573</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 22:32:04</sys_updated_on>
+    </sys_sg_item_stream_m2m_segment>
+</record_update>

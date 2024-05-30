@@ -1,0 +1,3193 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=6593000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>48a38d328782c650739662440cbb350e</copied_from>
+        <copied_from_name>Look-Up Customer Credit Cards</copied_from_name>
+        <description>&lt;p&gt;Show list of Tasks for a parent case, for use with Agent Workspace Playbook experience. Process activity waits for all the tasks to become inactive.&lt;/p&gt;</description>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>lookup_duplicate_suppliers</internal_name>
+        <label_cache>[{"name":"subflow.duplicate_query","label":"Input➛Duplicate Query Search","reference":"","reference_display":"","type":"conditions","base_type":"conditions","column_name":"","usedInstances":{"af16f996-6aac-4cc9-81d0-3a9c69beaa49":["conditions"]},"attributes":{"uiType":"conditions","uiTypeLabel":"Conditions","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c76d9c42-c8f3-4825-9d50-90641d965d11","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.wait_condition","label":"Input➛Wait Condition","reference":"","reference_display":"","type":"conditions","base_type":"conditions","column_name":"","usedInstances":{"abbd7c6c-8d04-4473-b08b-3fd1d3698f21":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"cee15007-3881-431a-aa8b-9ec87d087569"}},{"name":"subflow.case.x_snc_pab_clt_mgt_deceased_customer.sys_id","label":"Input➛Case➛Deceased Customer➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"csm_consumer","column_name":"sys_id","usedInstances":{"af16f996-6aac-4cc9-81d0-3a9c69beaa49":["conditions"]}},{"name":"subflow.case.consumer.sys_id","label":"Input➛Case➛Customer➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"csm_consumer","column_name":"sys_id","usedInstances":{}},{"name":"subflow.columns","label":"Input➛Columns","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"0a5640df-97b9-4359-84e1-0b066b3ad966"}},{"name":"subflow.list_query","label":"Input➛List Query","reference":"sn_bom_task","reference_display":"Financial Task","type":"conditions","base_type":"conditions","column_name":"","attributes":{"uiType":"conditions","uiTypeLabel":"Conditions","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","staticDependent":"sn_bom_task","uiUniqueId":"c6d6b286-37b7-43d6-96d2-4931ed56096a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"bc57c129-2034-4cc2-80dc-0f600e9f3837.record","label":"1 - Create Case Flow Data➛Record","reference":"sys_flow_data","reference_display":"Flow Data","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a84140d4-4607-4e97-a968-ee79f23bf1e0"}},{"name":"subflow.list_title","label":"Input➛List Title","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"71cb6b3c-f008-497e-88ec-67cab1c06e22"}},{"name":"e6ed322b-fa88-4992-bf87-9eac905b84c2.record","label":"1➛Record","reference":"sys_flow_data","reference_display":"Flow Data","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a84140d4-4607-4e97-a968-ee79f23bf1e0"}},{"name":"subflow.case","label":"Input➛Case","reference":"sn_bom_clo_b2c_service","reference_display":"Client Lifecycle Service Case","type":"reference","base_type":"reference","column_name":"","usedInstances":{"bc57c129-2034-4cc2-80dc-0f600e9f3837":["case"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f1ee1c8e-70d8-48c0-8cfe-d0b6dc3d253d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"af16f996-6aac-4cc9-81d0-3a9c69beaa49.Records","label":"3 - Look Up Records➛Supplier Records","reference":"sn_fin_supplier","reference_display":"Supplier","type":"records","base_type":"records","usedInstances":{"b63e425e-4c6e-4e37-9437-afcbc6509965":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b63e425e-4c6e-4e37-9437-afcbc6509965.item","label":"4 - For Each➛Supplier Record","reference":"sn_fin_supplier","reference_display":"Supplier","type":"reference","base_type":"reference","usedInstances":{"abbd7c6c-8d04-4473-b08b-3fd1d3698f21":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master_snapshot>6a82ce491b5aca90c19ca7d6b04bcb06</master_snapshot>
+        <name>Look-Up Duplicate Suppliers</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5c69a5c11b16ca90c19ca7d6b04bcb6f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Look-Up Duplicate Suppliers</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name>sys_hub_flow_5c69a5c11b16ca90c19ca7d6b04bcb6f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:20</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=5c69a5c11b16ca90c19ca7d6b04bcb6f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5c69a5c11b16ca90c19ca7d6b04bcb6f"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_5c69a5c11b16ca90c19ca7d6b04bcb6f^id=5c69a5c11b16ca90c19ca7d6b04bcb6f"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=5c69a5c11b16ca90c19ca7d6b04bcb6f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=5c69a5c11b16ca90c19ca7d6b04bcb6f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=5c69a5c11b16ca90c19ca7d6b04bcb6f^sys_idNOT IN9469a5c11b16ca90c19ca7d6b04bcb7d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>5c69a5c11b16ca90c19ca7d6b04bcb6f</id>
+        <name>Look-Up Duplicate Suppliers</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:17</sys_created_on>
+        <sys_id>9469a5c11b16ca90c19ca7d6b04bcb7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:17</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9469a5c11b16ca90c19ca7d6b04bcb7d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=5c69a5c11b16ca90c19ca7d6b04bcb6f^sys_idNOT IN5869a5c11b16ca90c19ca7d6b04bcbbb,6069a5c11b16ca90c19ca7d6b04bcbcb,7a728a491b5aca90c19ca7d6b04bcb7e,9c69a5c11b16ca90c19ca7d6b04bcb83,a469a5c11b16ca90c19ca7d6b04bcbce,e069a5c11b16ca90c19ca7d6b04bcbc1,f6728a491b5aca90c19ca7d6b04bcb7a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=conditions,uiTypeLabel=Conditions,uiUniqueId=cee15007-3881-431a-aa8b-9ec87d087569</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>inputs.query_table</dependent>
+        <dependent_on_field>inputs.query_table</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_condition</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Conditions">conditions</internal_type>
+        <label>Wait Condition</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</model>
+        <model_id>5c69a5c11b16ca90c19ca7d6b04bcb6f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:18</sys_created_on>
+        <sys_id>5869a5c11b16ca90c19ca7d6b04bcbbb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:52:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5869a5c11b16ca90c19ca7d6b04bcbbb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=71cb6b3c-f008-497e-88ec-67cab1c06e22</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>list_title</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>List Title</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</model>
+        <model_id>5c69a5c11b16ca90c19ca7d6b04bcb6f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:18</sys_created_on>
+        <sys_id>6069a5c11b16ca90c19ca7d6b04bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6069a5c11b16ca90c19ca7d6b04bcbcb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=conditions,uiTypeLabel=Conditions,uiUniqueId=c76d9c42-c8f3-4825-9d50-90641d965d11</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>inputs.query_table</dependent>
+        <dependent_on_field>inputs.query_table</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>duplicate_query</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Conditions">conditions</internal_type>
+        <label>Duplicate Query Search</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</model>
+        <model_id>5c69a5c11b16ca90c19ca7d6b04bcb6f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:52:58</sys_created_on>
+        <sys_id>7a728a491b5aca90c19ca7d6b04bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:52:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7a728a491b5aca90c19ca7d6b04bcb7e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=f1ee1c8e-70d8-48c0-8cfe-d0b6dc3d253d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_bom_clo_b2c_service</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Case</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</model>
+        <model_id>5c69a5c11b16ca90c19ca7d6b04bcb6f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_bom_clo_b2c_service">sn_bom_clo_b2c_service</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:17</sys_created_on>
+        <sys_id>9c69a5c11b16ca90c19ca7d6b04bcb83</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9c69a5c11b16ca90c19ca7d6b04bcb83"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0a5640df-97b9-4359-84e1-0b066b3ad966</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>columns</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Columns</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</model>
+        <model_id>5c69a5c11b16ca90c19ca7d6b04bcb6f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:19</sys_created_on>
+        <sys_id>a469a5c11b16ca90c19ca7d6b04bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a469a5c11b16ca90c19ca7d6b04bcbce"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2e92a1a9-3635-4bf5-84e5-a52b7950ce62</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>form_view</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Form View</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</model>
+        <model_id>5c69a5c11b16ca90c19ca7d6b04bcb6f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:18</sys_created_on>
+        <sys_id>e069a5c11b16ca90c19ca7d6b04bcbc1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:52:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e069a5c11b16ca90c19ca7d6b04bcbc1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=table_name,uiTypeLabel=Table,uiUniqueId=2893e00c-aed1-4a22-ae8d-d26b1eb3b6fa</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>query_table</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Query Table</label>
+        <mandatory>false</mandatory>
+        <max_length>80</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</model>
+        <model_id>5c69a5c11b16ca90c19ca7d6b04bcb6f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:52:58</sys_created_on>
+        <sys_id>f6728a491b5aca90c19ca7d6b04bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:52:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f6728a491b5aca90c19ca7d6b04bcb7a"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=5c69a5c11b16ca90c19ca7d6b04bcb6f^sys_idNOT IN7869e5c11b16ca90c19ca7d6b04bcb0d,ec69e5c11b16ca90c19ca7d6b04bcb06,fc69e5c11b16ca90c19ca7d6b04bcb11"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=b3a23127-1534-4d75-91cc-46e5091d4bee</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table>sys_flow_data</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_data</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Flow Data</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</model>
+        <model_id>5c69a5c11b16ca90c19ca7d6b04bcb6f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_flow_data">sys_flow_data</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:19</sys_created_on>
+        <sys_id>7869e5c11b16ca90c19ca7d6b04bcb0d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7869e5c11b16ca90c19ca7d6b04bcb0d"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=60a67d9e-a60b-4e3a-8f95-e1dcba57ac43</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>list_description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>List Description</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</model>
+        <model_id>5c69a5c11b16ca90c19ca7d6b04bcb6f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:19</sys_created_on>
+        <sys_id>ec69e5c11b16ca90c19ca7d6b04bcb06</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ec69e5c11b16ca90c19ca7d6b04bcb06"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=46b87073-f6c1-4ee7-a43b-b5c4ad137abc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>columns</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Columns</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</model>
+        <model_id>5c69a5c11b16ca90c19ca7d6b04bcb6f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:19</sys_created_on>
+        <sys_id>fc69e5c11b16ca90c19ca7d6b04bcb11</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fc69e5c11b16ca90c19ca7d6b04bcb11"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5c69a5c11b16ca90c19ca7d6b04bcb6f"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=5c69a5c11b16ca90c19ca7d6b04bcb6f^sys_idNOT IN0d69e5c11b16ca90c19ca7d6b04bcb4b,4169e5c11b16ca90c19ca7d6b04bcb54,8969e5c11b16ca90c19ca7d6b04bcb42,9d69e5c11b16ca90c19ca7d6b04bcb5a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>0d69e5c11b16ca90c19ca7d6b04bcb4b</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:20</sys_updated_on>
+        <ui_id>af16f996-6aac-4cc9-81d0-3a9c69beaa49</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0d69e5c11b16ca90c19ca7d6b04bcb4b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0d69e5c11b16ca90c19ca7d6b04bcb4b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>0169e5c11b16ca90c19ca7d6b04bcb4e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:01</sys_updated_on>
+        <value>sn_fin_supplier</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0d69e5c11b16ca90c19ca7d6b04bcb4b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>4d69e5c11b16ca90c19ca7d6b04bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:21</sys_updated_on>
+        <value>sys_created_on</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0d69e5c11b16ca90c19ca7d6b04bcb4b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>0d69e5c11b16ca90c19ca7d6b04bcb4b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>0969e5c11b16ca90c19ca7d6b04bcb4d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>{{subflow.duplicate_query}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>0d69e5c11b16ca90c19ca7d6b04bcb4b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>4569e5c11b16ca90c19ca7d6b04bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>0d69e5c11b16ca90c19ca7d6b04bcb4b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>c969e5c11b16ca90c19ca7d6b04bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0d69e5c11b16ca90c19ca7d6b04bcb4b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0d69e5c11b16ca90c19ca7d6b04bcb4b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>b63e425e-4c6e-4e37-9437-afcbc6509965</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>4169e5c11b16ca90c19ca7d6b04bcb54</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:20</sys_updated_on>
+        <ui_id>abbd7c6c-8d04-4473-b08b-3fd1d3698f21</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4169e5c11b16ca90c19ca7d6b04bcb54"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4169e5c11b16ca90c19ca7d6b04bcb54</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>0569e5c11b16ca90c19ca7d6b04bcb56</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:01</sys_updated_on>
+        <value>sn_fin_supplier</value>
+        <variable display_value="Table">45ce8a4187120010663ca1bb36cb0bea</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4169e5c11b16ca90c19ca7d6b04bcb54"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>4169e5c11b16ca90c19ca7d6b04bcb54</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>cd69e5c11b16ca90c19ca7d6b04bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value>{{subflow.wait_condition}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4169e5c11b16ca90c19ca7d6b04bcb54</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>0d69e5c11b16ca90c19ca7d6b04bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value>{{b63e425e-4c6e-4e37-9437-afcbc6509965.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4169e5c11b16ca90c19ca7d6b04bcb54</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>8169e5c11b16ca90c19ca7d6b04bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4169e5c11b16ca90c19ca7d6b04bcb54"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4169e5c11b16ca90c19ca7d6b04bcb54"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Case Flow Data">a93b771753532010929fddeeff7b1265</action_type>
+        <action_type_parent display_value="Create Case Flow Data">aa3ab7d353532010929fddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:20</sys_created_on>
+        <sys_id>8969e5c11b16ca90c19ca7d6b04bcb42</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:19</sys_updated_on>
+        <ui_id>bc57c129-2034-4cc2-80dc-0f600e9f3837</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8969e5c11b16ca90c19ca7d6b04bcb42"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8969e5c11b16ca90c19ca7d6b04bcb42</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:20</sys_created_on>
+        <sys_id>4d69e5c11b16ca90c19ca7d6b04bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:20</sys_updated_on>
+        <value>501484af53532010929fddeeff7b126b</value>
+        <variable display_value="Definition">a13b771753532010929fddeeff7b1269</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8969e5c11b16ca90c19ca7d6b04bcb42"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>case</field>
+        <id>8969e5c11b16ca90c19ca7d6b04bcb42</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:20</sys_created_on>
+        <sys_id>c969e5c11b16ca90c19ca7d6b04bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a93b771753532010929fddeeff7b1265</table>
+        <value>{{subflow.case}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>definition</field>
+        <id>8969e5c11b16ca90c19ca7d6b04bcb42</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:20</sys_created_on>
+        <sys_id>0969e5c11b16ca90c19ca7d6b04bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a93b771753532010929fddeeff7b1265</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8969e5c11b16ca90c19ca7d6b04bcb42"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8969e5c11b16ca90c19ca7d6b04bcb42"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>9d69e5c11b16ca90c19ca7d6b04bcb5a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:20</sys_updated_on>
+        <ui_id>8892cbbc-bc96-40ed-8437-4f1adaff52fa</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9d69e5c11b16ca90c19ca7d6b04bcb5a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9d69e5c11b16ca90c19ca7d6b04bcb5a</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>9d69e5c11b16ca90c19ca7d6b04bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:21</sys_updated_on>
+        <value>sys_flow_data</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9d69e5c11b16ca90c19ca7d6b04bcb5a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>d969e5c11b16ca90c19ca7d6b04bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:21</sys_updated_on>
+        <value>state=COMPLETE</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9d69e5c11b16ca90c19ca7d6b04bcb5a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>9d69e5c11b16ca90c19ca7d6b04bcb5a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>5969e5c11b16ca90c19ca7d6b04bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{bc57c129-2034-4cc2-80dc-0f600e9f3837.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>9d69e5c11b16ca90c19ca7d6b04bcb5a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>d169e5c11b16ca90c19ca7d6b04bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>9d69e5c11b16ca90c19ca7d6b04bcb5a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:21</sys_created_on>
+        <sys_id>9569e5c11b16ca90c19ca7d6b04bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9d69e5c11b16ca90c19ca7d6b04bcb5a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9d69e5c11b16ca90c19ca7d6b04bcb5a"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=5c69a5c11b16ca90c19ca7d6b04bcb6f"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=5c69a5c11b16ca90c19ca7d6b04bcb6f^sys_idNOT IN7c69e5c11b16ca90c19ca7d6b04bcb37,b069e5c11b16ca90c19ca7d6b04bcb26"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b27089f68742c650739662440cbb35a9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:20</sys_created_on>
+        <sys_id>7c69e5c11b16ca90c19ca7d6b04bcb37</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:20</sys_updated_on>
+        <ui_id>b63e425e-4c6e-4e37-9437-afcbc6509965</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7c69e5c11b16ca90c19ca7d6b04bcb37"/>
+    <sys_element_mapping action="delete_multiple" query="id=7c69e5c11b16ca90c19ca7d6b04bcb37"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>7c69e5c11b16ca90c19ca7d6b04bcb37</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:20</sys_created_on>
+        <sys_id>4969e5c11b16ca90c19ca7d6b04bcb3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{af16f996-6aac-4cc9-81d0-3a9c69beaa49.Records}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_5c69a5c11b16ca90c19ca7d6b04bcb6f^id=7c69e5c11b16ca90c19ca7d6b04bcb37"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7c69e5c11b16ca90c19ca7d6b04bcb37"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7c69e5c11b16ca90c19ca7d6b04bcb37"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4f973c328702c650739662440cbb3558</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>list_description,flow_data,columns</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:20</sys_created_on>
+        <sys_id>b069e5c11b16ca90c19ca7d6b04bcb26</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:20</sys_updated_on>
+        <ui_id>bad32b6c-119d-47d3-b3fe-c0e93d6caec9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b069e5c11b16ca90c19ca7d6b04bcb26"/>
+    <sys_element_mapping action="delete_multiple" query="id=b069e5c11b16ca90c19ca7d6b04bcb26"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>columns</field>
+        <id>b069e5c11b16ca90c19ca7d6b04bcb26</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:20</sys_created_on>
+        <sys_id>7869e5c11b16ca90c19ca7d6b04bcb2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_5c69a5c11b16ca90c19ca7d6b04bcb6f</table>
+        <value>{{subflow.columns}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow_data</field>
+        <id>b069e5c11b16ca90c19ca7d6b04bcb26</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:20</sys_created_on>
+        <sys_id>b469e5c11b16ca90c19ca7d6b04bcb2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_5c69a5c11b16ca90c19ca7d6b04bcb6f</table>
+        <value>{{e6ed322b-fa88-4992-bf87-9eac905b84c2.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>list_description</field>
+        <id>b069e5c11b16ca90c19ca7d6b04bcb26</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:20</sys_created_on>
+        <sys_id>fc69e5c11b16ca90c19ca7d6b04bcb29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_5c69a5c11b16ca90c19ca7d6b04bcb6f</table>
+        <value>{{subflow.list_title}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b069e5c11b16ca90c19ca7d6b04bcb26"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b069e5c11b16ca90c19ca7d6b04bcb26"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=5c69a5c11b16ca90c19ca7d6b04bcb6f"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=5c69a5c11b16ca90c19ca7d6b04bcb6f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f^sys_idNOT IN5c69a5c11b16ca90c19ca7d6b04bcb88,7a728a491b5aca90c19ca7d6b04bcb7d,8f728a491b5aca90c19ca7d6b04bcb80,a469a5c11b16ca90c19ca7d6b04bcbcd,e069a5c11b16ca90c19ca7d6b04bcbc0,e469a5c11b16ca90c19ca7d6b04bcbc3,e869a5c11b16ca90c19ca7d6b04bcbd0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case</element>
+        <help/>
+        <hint/>
+        <label>Case</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:18</sys_created_on>
+        <sys_id>5c69a5c11b16ca90c19ca7d6b04bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>query_table</element>
+        <help/>
+        <hint/>
+        <label>Query Table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:52:58</sys_created_on>
+        <sys_id>7a728a491b5aca90c19ca7d6b04bcb7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:52:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>duplicate_query</element>
+        <help/>
+        <hint/>
+        <label>Duplicate Query Search</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:52:58</sys_created_on>
+        <sys_id>8f728a491b5aca90c19ca7d6b04bcb80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:52:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>list_title</element>
+        <help/>
+        <hint/>
+        <label>List Title</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:19</sys_created_on>
+        <sys_id>a469a5c11b16ca90c19ca7d6b04bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>wait_condition</element>
+        <help/>
+        <hint/>
+        <label>Wait Condition</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:18</sys_created_on>
+        <sys_id>e069a5c11b16ca90c19ca7d6b04bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>form_view</element>
+        <help/>
+        <hint/>
+        <label>Form View</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:18</sys_created_on>
+        <sys_id>e469a5c11b16ca90c19ca7d6b04bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>columns</element>
+        <help/>
+        <hint/>
+        <label>Columns</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:19</sys_created_on>
+        <sys_id>e869a5c11b16ca90c19ca7d6b04bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5c69a5c11b16ca90c19ca7d6b04bcb6f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_5c69a5c11b16ca90c19ca7d6b04bcb6f^sys_idNOT IN7869e5c11b16ca90c19ca7d6b04bcb0c,b469e5c11b16ca90c19ca7d6b04bcb22,fc69e5c11b16ca90c19ca7d6b04bcb10"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>list_description</element>
+        <help/>
+        <hint/>
+        <label>List Description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:19</sys_created_on>
+        <sys_id>7869e5c11b16ca90c19ca7d6b04bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>columns</element>
+        <help/>
+        <hint/>
+        <label>Columns</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:20</sys_created_on>
+        <sys_id>b469e5c11b16ca90c19ca7d6b04bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>flow_data</element>
+        <help/>
+        <hint/>
+        <label>Flow Data</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_5c69a5c11b16ca90c19ca7d6b04bcb6f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 11:03:19</sys_created_on>
+        <sys_id>fc69e5c11b16ca90c19ca7d6b04bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 11:03:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5c69a5c11b16ca90c19ca7d6b04bcb6f"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=104027000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>48a38d328782c650739662440cbb350e</copied_from>
+        <copied_from_name/>
+        <description>&lt;p&gt;Show list of Tasks for a parent case, for use with Agent Workspace Playbook experience. Process activity waits for all the tasks to become inactive.&lt;/p&gt;</description>
+        <flow_priority/>
+        <internal_name>lookup_duplicate_suppliers</internal_name>
+        <label_cache>[{"name":"subflow.duplicate_query","label":"Input➛Duplicate Query Search","reference":"","reference_display":"","type":"conditions","base_type":"conditions","column_name":"","usedInstances":{"af16f996-6aac-4cc9-81d0-3a9c69beaa49":["conditions"]},"attributes":{"uiType":"conditions","uiTypeLabel":"Conditions","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c76d9c42-c8f3-4825-9d50-90641d965d11","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.wait_condition","label":"Input➛Wait Condition","reference":"","reference_display":"","type":"conditions","base_type":"conditions","column_name":"","usedInstances":{"abbd7c6c-8d04-4473-b08b-3fd1d3698f21":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"cee15007-3881-431a-aa8b-9ec87d087569"}},{"name":"subflow.case.x_snc_pab_clt_mgt_deceased_customer.sys_id","label":"Input➛Case➛Deceased Customer➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"csm_consumer","column_name":"sys_id","usedInstances":{"af16f996-6aac-4cc9-81d0-3a9c69beaa49":["conditions"]}},{"name":"subflow.case.consumer.sys_id","label":"Input➛Case➛Customer➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"csm_consumer","column_name":"sys_id","usedInstances":{}},{"name":"subflow.columns","label":"Input➛Columns","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"0a5640df-97b9-4359-84e1-0b066b3ad966"}},{"name":"subflow.list_query","label":"Input➛List Query","reference":"sn_bom_task","reference_display":"Financial Task","type":"conditions","base_type":"conditions","column_name":"","attributes":{"uiType":"conditions","uiTypeLabel":"Conditions","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","staticDependent":"sn_bom_task","uiUniqueId":"c6d6b286-37b7-43d6-96d2-4931ed56096a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"bc57c129-2034-4cc2-80dc-0f600e9f3837.record","label":"1 - Create Case Flow Data➛Record","reference":"sys_flow_data","reference_display":"Flow Data","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a84140d4-4607-4e97-a968-ee79f23bf1e0"}},{"name":"subflow.list_title","label":"Input➛List Title","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"71cb6b3c-f008-497e-88ec-67cab1c06e22"}},{"name":"e6ed322b-fa88-4992-bf87-9eac905b84c2.record","label":"1➛Record","reference":"sys_flow_data","reference_display":"Flow Data","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a84140d4-4607-4e97-a968-ee79f23bf1e0"}},{"name":"subflow.case","label":"Input➛Case","reference":"sn_bom_clo_b2c_service","reference_display":"Client Lifecycle Service Case","type":"reference","base_type":"reference","column_name":"","usedInstances":{"bc57c129-2034-4cc2-80dc-0f600e9f3837":["case"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f1ee1c8e-70d8-48c0-8cfe-d0b6dc3d253d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"af16f996-6aac-4cc9-81d0-3a9c69beaa49.Records","label":"3 - Look Up Records➛Supplier Records","reference":"sn_fin_supplier","reference_display":"Supplier","type":"records","base_type":"records","usedInstances":{"b63e425e-4c6e-4e37-9437-afcbc6509965":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b63e425e-4c6e-4e37-9437-afcbc6509965.item","label":"4 - For Each➛Supplier Record","reference":"sn_fin_supplier","reference_display":"Supplier","type":"reference","base_type":"reference","usedInstances":{"abbd7c6c-8d04-4473-b08b-3fd1d3698f21":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master>true</master>
+        <name>Look-Up Duplicate Suppliers</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6a82ce491b5aca90c19ca7d6b04bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:13</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=6a82ce491b5aca90c19ca7d6b04bcb06"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6a82ce491b5aca90c19ca7d6b04bcb06"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_6a82ce491b5aca90c19ca7d6b04bcb06^id=6a82ce491b5aca90c19ca7d6b04bcb06"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=6a82ce491b5aca90c19ca7d6b04bcb06"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6a82ce491b5aca90c19ca7d6b04bcb06"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6a82ce491b5aca90c19ca7d6b04bcb06^sys_idNOT INea82ce491b5aca90c19ca7d6b04bcb07"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6a82ce491b5aca90c19ca7d6b04bcb06</id>
+        <name>Look-Up Duplicate Suppliers</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:13</sys_created_on>
+        <sys_id>ea82ce491b5aca90c19ca7d6b04bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ea82ce491b5aca90c19ca7d6b04bcb07"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6a82ce491b5aca90c19ca7d6b04bcb06^sys_idNOT IN3e82ce491b5aca90c19ca7d6b04bcb52,3e82ce491b5aca90c19ca7d6b04bcb6f,7a82ce491b5aca90c19ca7d6b04bcb4a,8382ce491b5aca90c19ca7d6b04bcb78,8782ce491b5aca90c19ca7d6b04bcb99,a682ce491b5aca90c19ca7d6b04bcb15,f682ce491b5aca90c19ca7d6b04bcb67"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=conditions,uiTypeLabel=Conditions,uiUniqueId=c76d9c42-c8f3-4825-9d50-90641d965d11</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>inputs.query_table</dependent>
+        <dependent_on_field>inputs.query_table</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>duplicate_query</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Conditions">conditions</internal_type>
+        <label>Duplicate Query Search</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</model>
+        <model_id>6a82ce491b5aca90c19ca7d6b04bcb06</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:14</sys_created_on>
+        <sys_id>3e82ce491b5aca90c19ca7d6b04bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3e82ce491b5aca90c19ca7d6b04bcb52"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2e92a1a9-3635-4bf5-84e5-a52b7950ce62</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>form_view</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Form View</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</model>
+        <model_id>6a82ce491b5aca90c19ca7d6b04bcb06</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:14</sys_created_on>
+        <sys_id>3e82ce491b5aca90c19ca7d6b04bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3e82ce491b5aca90c19ca7d6b04bcb6f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=table_name,uiTypeLabel=Table,uiUniqueId=2893e00c-aed1-4a22-ae8d-d26b1eb3b6fa</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>query_table</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Query Table</label>
+        <mandatory>false</mandatory>
+        <max_length>80</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</model>
+        <model_id>6a82ce491b5aca90c19ca7d6b04bcb06</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:14</sys_created_on>
+        <sys_id>7a82ce491b5aca90c19ca7d6b04bcb4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7a82ce491b5aca90c19ca7d6b04bcb4a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=71cb6b3c-f008-497e-88ec-67cab1c06e22</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>list_title</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>List Title</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</model>
+        <model_id>6a82ce491b5aca90c19ca7d6b04bcb06</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:15</sys_created_on>
+        <sys_id>8382ce491b5aca90c19ca7d6b04bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8382ce491b5aca90c19ca7d6b04bcb78"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0a5640df-97b9-4359-84e1-0b066b3ad966</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>columns</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Columns</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</model>
+        <model_id>6a82ce491b5aca90c19ca7d6b04bcb06</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:15</sys_created_on>
+        <sys_id>8782ce491b5aca90c19ca7d6b04bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8782ce491b5aca90c19ca7d6b04bcb99"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=f1ee1c8e-70d8-48c0-8cfe-d0b6dc3d253d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_bom_clo_b2c_service</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Case</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</model>
+        <model_id>6a82ce491b5aca90c19ca7d6b04bcb06</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_bom_clo_b2c_service">sn_bom_clo_b2c_service</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:13</sys_created_on>
+        <sys_id>a682ce491b5aca90c19ca7d6b04bcb15</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a682ce491b5aca90c19ca7d6b04bcb15"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=conditions,uiTypeLabel=Conditions,uiUniqueId=cee15007-3881-431a-aa8b-9ec87d087569</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>inputs.query_table</dependent>
+        <dependent_on_field>inputs.query_table</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_condition</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Conditions">conditions</internal_type>
+        <label>Wait Condition</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</model>
+        <model_id>6a82ce491b5aca90c19ca7d6b04bcb06</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:14</sys_created_on>
+        <sys_id>f682ce491b5aca90c19ca7d6b04bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f682ce491b5aca90c19ca7d6b04bcb67"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6a82ce491b5aca90c19ca7d6b04bcb06^sys_idNOT IN8382ce491b5aca90c19ca7d6b04bcba5,9382ce491b5aca90c19ca7d6b04bcbe3,9782ce491b5aca90c19ca7d6b04bcbcb"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=60a67d9e-a60b-4e3a-8f95-e1dcba57ac43</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>list_description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>List Description</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</model>
+        <model_id>6a82ce491b5aca90c19ca7d6b04bcb06</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:15</sys_created_on>
+        <sys_id>8382ce491b5aca90c19ca7d6b04bcba5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8382ce491b5aca90c19ca7d6b04bcba5"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=46b87073-f6c1-4ee7-a43b-b5c4ad137abc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>columns</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Columns</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</model>
+        <model_id>6a82ce491b5aca90c19ca7d6b04bcb06</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:16</sys_created_on>
+        <sys_id>9382ce491b5aca90c19ca7d6b04bcbe3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9382ce491b5aca90c19ca7d6b04bcbe3"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=b3a23127-1534-4d75-91cc-46e5091d4bee</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table>sys_flow_data</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_data</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Flow Data</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</model>
+        <model_id>6a82ce491b5aca90c19ca7d6b04bcb06</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_flow_data">sys_flow_data</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:16</sys_created_on>
+        <sys_id>9782ce491b5aca90c19ca7d6b04bcbcb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9782ce491b5aca90c19ca7d6b04bcbcb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6a82ce491b5aca90c19ca7d6b04bcb06"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=6a82ce491b5aca90c19ca7d6b04bcb06^sys_idNOT IN3f8202891b5aca90c19ca7d6b04bcbc9,b38202891b5aca90c19ca7d6b04bcba8,b78202891b5aca90c19ca7d6b04bcb5f,eb8202891b5aca90c19ca7d6b04bcb47"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>3f8202891b5aca90c19ca7d6b04bcbc9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <ui_id>8892cbbc-bc96-40ed-8437-4f1adaff52fa</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3f8202891b5aca90c19ca7d6b04bcbc9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3f8202891b5aca90c19ca7d6b04bcbc9</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>3f8202891b5aca90c19ca7d6b04bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <value>sys_flow_data</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3f8202891b5aca90c19ca7d6b04bcbc9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>7b8202891b5aca90c19ca7d6b04bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <value>state=COMPLETE</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3f8202891b5aca90c19ca7d6b04bcbc9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>3f8202891b5aca90c19ca7d6b04bcbc9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>f78202891b5aca90c19ca7d6b04bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{bc57c129-2034-4cc2-80dc-0f600e9f3837.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>3f8202891b5aca90c19ca7d6b04bcbc9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>738202891b5aca90c19ca7d6b04bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>3f8202891b5aca90c19ca7d6b04bcbc9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>378202891b5aca90c19ca7d6b04bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3f8202891b5aca90c19ca7d6b04bcbc9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3f8202891b5aca90c19ca7d6b04bcbc9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>b63e425e-4c6e-4e37-9437-afcbc6509965</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>b38202891b5aca90c19ca7d6b04bcba8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <ui_id>abbd7c6c-8d04-4473-b08b-3fd1d3698f21</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b38202891b5aca90c19ca7d6b04bcba8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b38202891b5aca90c19ca7d6b04bcba8</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>738202891b5aca90c19ca7d6b04bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <value>sn_fin_supplier</value>
+        <variable display_value="Table">45ce8a4187120010663ca1bb36cb0bea</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b38202891b5aca90c19ca7d6b04bcba8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>b38202891b5aca90c19ca7d6b04bcba8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>3f8202891b5aca90c19ca7d6b04bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value>{{subflow.wait_condition}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b38202891b5aca90c19ca7d6b04bcba8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>7b8202891b5aca90c19ca7d6b04bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value>{{b63e425e-4c6e-4e37-9437-afcbc6509965.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>b38202891b5aca90c19ca7d6b04bcba8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>ff8202891b5aca90c19ca7d6b04bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b38202891b5aca90c19ca7d6b04bcba8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b38202891b5aca90c19ca7d6b04bcba8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>b78202891b5aca90c19ca7d6b04bcb5f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <ui_id>af16f996-6aac-4cc9-81d0-3a9c69beaa49</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b78202891b5aca90c19ca7d6b04bcb5f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b78202891b5aca90c19ca7d6b04bcb5f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>b78202891b5aca90c19ca7d6b04bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <value>sn_fin_supplier</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b78202891b5aca90c19ca7d6b04bcb5f</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>f38202891b5aca90c19ca7d6b04bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <value>sys_created_on</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b78202891b5aca90c19ca7d6b04bcb5f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>b78202891b5aca90c19ca7d6b04bcb5f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>bf8202891b5aca90c19ca7d6b04bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>{{subflow.duplicate_query}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>b78202891b5aca90c19ca7d6b04bcb5f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>fb8202891b5aca90c19ca7d6b04bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>b78202891b5aca90c19ca7d6b04bcb5f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:18</sys_created_on>
+        <sys_id>738202891b5aca90c19ca7d6b04bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b78202891b5aca90c19ca7d6b04bcb5f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b78202891b5aca90c19ca7d6b04bcb5f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Case Flow Data">a93b771753532010929fddeeff7b1265</action_type>
+        <action_type_parent display_value="Create Case Flow Data">aa3ab7d353532010929fddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:17</sys_created_on>
+        <sys_id>eb8202891b5aca90c19ca7d6b04bcb47</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:17</sys_updated_on>
+        <ui_id>bc57c129-2034-4cc2-80dc-0f600e9f3837</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=eb8202891b5aca90c19ca7d6b04bcb47"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>eb8202891b5aca90c19ca7d6b04bcb47</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:17</sys_created_on>
+        <sys_id>2b8202891b5aca90c19ca7d6b04bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:17</sys_updated_on>
+        <value>501484af53532010929fddeeff7b126b</value>
+        <variable display_value="Definition">a13b771753532010929fddeeff7b1269</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=eb8202891b5aca90c19ca7d6b04bcb47"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>case</field>
+        <id>eb8202891b5aca90c19ca7d6b04bcb47</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:17</sys_created_on>
+        <sys_id>a78202891b5aca90c19ca7d6b04bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a93b771753532010929fddeeff7b1265</table>
+        <value>{{subflow.case}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>definition</field>
+        <id>eb8202891b5aca90c19ca7d6b04bcb47</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:17</sys_created_on>
+        <sys_id>e38202891b5aca90c19ca7d6b04bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_a93b771753532010929fddeeff7b1265</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eb8202891b5aca90c19ca7d6b04bcb47"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=eb8202891b5aca90c19ca7d6b04bcb47"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=6a82ce491b5aca90c19ca7d6b04bcb06"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=6a82ce491b5aca90c19ca7d6b04bcb06^sys_idNOT IN5782ce491b5aca90c19ca7d6b04bcbfe,ef8202891b5aca90c19ca7d6b04bcb2b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4f973c328702c650739662440cbb3558</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>list_description,flow_data,columns</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:16</sys_created_on>
+        <sys_id>5782ce491b5aca90c19ca7d6b04bcbfe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:17</sys_updated_on>
+        <ui_id>bad32b6c-119d-47d3-b3fe-c0e93d6caec9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5782ce491b5aca90c19ca7d6b04bcbfe"/>
+    <sys_element_mapping action="delete_multiple" query="id=5782ce491b5aca90c19ca7d6b04bcbfe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>columns</field>
+        <id>5782ce491b5aca90c19ca7d6b04bcbfe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:17</sys_created_on>
+        <sys_id>278202891b5aca90c19ca7d6b04bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_6a82ce491b5aca90c19ca7d6b04bcb06</table>
+        <value>{{subflow.columns}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow_data</field>
+        <id>5782ce491b5aca90c19ca7d6b04bcbfe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:17</sys_created_on>
+        <sys_id>638202891b5aca90c19ca7d6b04bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_6a82ce491b5aca90c19ca7d6b04bcb06</table>
+        <value>{{e6ed322b-fa88-4992-bf87-9eac905b84c2.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>list_description</field>
+        <id>5782ce491b5aca90c19ca7d6b04bcbfe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:17</sys_created_on>
+        <sys_id>ab8202891b5aca90c19ca7d6b04bcb2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_6a82ce491b5aca90c19ca7d6b04bcb06</table>
+        <value>{{subflow.list_title}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5782ce491b5aca90c19ca7d6b04bcbfe"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5782ce491b5aca90c19ca7d6b04bcbfe"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b27089f68742c650739662440cbb35a9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Look-Up Duplicate Suppliers">6a82ce491b5aca90c19ca7d6b04bcb06</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:17</sys_created_on>
+        <sys_id>ef8202891b5aca90c19ca7d6b04bcb2b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:17</sys_updated_on>
+        <ui_id>b63e425e-4c6e-4e37-9437-afcbc6509965</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ef8202891b5aca90c19ca7d6b04bcb2b"/>
+    <sys_element_mapping action="delete_multiple" query="id=ef8202891b5aca90c19ca7d6b04bcb2b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>ef8202891b5aca90c19ca7d6b04bcb2b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:17</sys_created_on>
+        <sys_id>a38202891b5aca90c19ca7d6b04bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{af16f996-6aac-4cc9-81d0-3a9c69beaa49.Records}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_6a82ce491b5aca90c19ca7d6b04bcb06^id=ef8202891b5aca90c19ca7d6b04bcb2b"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ef8202891b5aca90c19ca7d6b04bcb2b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ef8202891b5aca90c19ca7d6b04bcb2b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6a82ce491b5aca90c19ca7d6b04bcb06"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6a82ce491b5aca90c19ca7d6b04bcb06"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06^sys_idNOT IN0782ce491b5aca90c19ca7d6b04bcb9e,0b82ce491b5aca90c19ca7d6b04bcb74,0f82ce491b5aca90c19ca7d6b04bcb95,7e82ce491b5aca90c19ca7d6b04bcb63,b282ce491b5aca90c19ca7d6b04bcb4f,b282ce491b5aca90c19ca7d6b04bcb6c,fe82ce491b5aca90c19ca7d6b04bcb46"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>columns</element>
+        <help/>
+        <hint/>
+        <label>Columns</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:15</sys_created_on>
+        <sys_id>0782ce491b5aca90c19ca7d6b04bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>form_view</element>
+        <help/>
+        <hint/>
+        <label>Form View</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:15</sys_created_on>
+        <sys_id>0b82ce491b5aca90c19ca7d6b04bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>list_title</element>
+        <help/>
+        <hint/>
+        <label>List Title</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:15</sys_created_on>
+        <sys_id>0f82ce491b5aca90c19ca7d6b04bcb95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>duplicate_query</element>
+        <help/>
+        <hint/>
+        <label>Duplicate Query Search</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:14</sys_created_on>
+        <sys_id>7e82ce491b5aca90c19ca7d6b04bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>query_table</element>
+        <help/>
+        <hint/>
+        <label>Query Table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:14</sys_created_on>
+        <sys_id>b282ce491b5aca90c19ca7d6b04bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>wait_condition</element>
+        <help/>
+        <hint/>
+        <label>Wait Condition</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:14</sys_created_on>
+        <sys_id>b282ce491b5aca90c19ca7d6b04bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case</element>
+        <help/>
+        <hint/>
+        <label>Case</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:14</sys_created_on>
+        <sys_id>fe82ce491b5aca90c19ca7d6b04bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6a82ce491b5aca90c19ca7d6b04bcb06"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_6a82ce491b5aca90c19ca7d6b04bcb06^sys_idNOT IN0f82ce491b5aca90c19ca7d6b04bcbc7,1b82ce491b5aca90c19ca7d6b04bcbdf,5382ce491b5aca90c19ca7d6b04bcbf8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>list_description</element>
+        <help/>
+        <hint/>
+        <label>List Description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:15</sys_created_on>
+        <sys_id>0f82ce491b5aca90c19ca7d6b04bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>flow_data</element>
+        <help/>
+        <hint/>
+        <label>Flow Data</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:16</sys_created_on>
+        <sys_id>1b82ce491b5aca90c19ca7d6b04bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>columns</element>
+        <help/>
+        <hint/>
+        <label>Columns</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_6a82ce491b5aca90c19ca7d6b04bcb06</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:16</sys_created_on>
+        <sys_id>5382ce491b5aca90c19ca7d6b04bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Supplier Management" source="x_snc_pab_sup_mgt">81eca19a87ca8250739662440cbb3579</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Supplier Management">81eca19a87ca8250739662440cbb3579</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6a82ce491b5aca90c19ca7d6b04bcb06"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>5c69a5c11b16ca90c19ca7d6b04bcb6f</sys_id>
+        <latest_snapshot>6a82ce491b5aca90c19ca7d6b04bcb06</latest_snapshot>
+        <compiler_build>glide-washingtondc-12-20-2023__patch2-hotfix1-04-15-2024_04-17-2024_1014.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=5c69a5c11b16ca90c19ca7d6b04bcb6f"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=5c69a5c11b16ca90c19ca7d6b04bcb6f^sys_idNOT IN409242891b5aca90c19ca7d6b04bcb12"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@45707f73</plan>
+        <plan_id display_value="Look-Up Duplicate Suppliers">5c69a5c11b16ca90c19ca7d6b04bcb6f</plan_id>
+        <snapshot>6a82ce491b5aca90c19ca7d6b04bcb06</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 12:53:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>409242891b5aca90c19ca7d6b04bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 12:53:19</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

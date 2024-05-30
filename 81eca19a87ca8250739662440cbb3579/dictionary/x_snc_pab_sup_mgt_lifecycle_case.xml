@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d63fe9de87ca8250739662440cbb3552" extends="sn_bom_clo_b2b_base" label="Broker Lifecycle Management" max_length="40" name="x_snc_pab_sup_mgt_lifecycle_case" type="collection">
+        <element label="Australian Business Number" max_length="40" name="abn" type="string"/>
+        <element choice="1" label="ABN Verified" max_length="40" name="abn_verified" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element label="Australian Company Number" max_length="40" name="acn" type="string"/>
+        <element label="Aggregator" max_length="32" name="aggregator" reference="sn_fin_supplier" type="reference"/>
+        <element label="Business name" max_length="40" name="business_name" type="string"/>
+        <element choice="1" label="Business type" max_length="40" name="business_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Sole trader" sequence="0" value="sole_trader"/>
+                <element inactive_on_update="false" label="Partnership" sequence="1" value="partnership"/>
+                <element inactive_on_update="false" label="Company" sequence="2" value="company"/>
+                <element inactive_on_update="false" label="Trust" sequence="3" value="trust"/>
+            </choice>
+        </element>
+        <element label="Company reference" max_length="32" name="company_reference" reference="core_company" type="reference"/>
+        <element label="Australian Credit Licence" max_length="40" name="credit_license" type="string"/>
+        <element label="Date of incorporation" max_length="255" name="date_of_incorporation" type="glide_date"/>
+        <element choice="1" label="Document review completed" max_length="40" name="document_review_completed" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element label="Doing business as" max_length="40" name="doing_business_as" type="string"/>
+        <element label="Email" max_length="40" name="email" type="string"/>
+        <element label="First name" max_length="40" name="first_name" type="string"/>
+        <element choice="1" label="Intelligence stats" max_length="40" name="intelligence_stats" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cleared" sequence="0" value="Cleared"/>
+                <element inactive_on_update="false" label="Suspect" sequence="1" value="Suspect"/>
+                <element inactive_on_update="false" label="Alert" sequence="2" value="Alert"/>
+            </choice>
+        </element>
+        <element label="Last name" max_length="40" name="last_name" type="string"/>
+        <element label="Phone number" max_length="255" name="phone_number" type="phone_number_e164"/>
+        <element choice="1" label="Position" max_length="40" name="position" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Director" sequence="0" value="director"/>
+                <element inactive_on_update="false" label="Representative" sequence="1" value="representative"/>
+                <element inactive_on_update="false" label="Owner" sequence="2" value="owner"/>
+            </choice>
+        </element>
+        <element label="Previous business name" max_length="40" name="previous_business_name" type="string"/>
+        <element label="Supplier" max_length="32" name="supplier" reference="sn_fin_supplier" type="reference"/>
+    </element>
+</database>

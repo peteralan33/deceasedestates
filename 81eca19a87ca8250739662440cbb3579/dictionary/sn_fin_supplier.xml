@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b0622bf387bd4e1021dca9770cbb358f" extends="sn_fin_organization" label="Supplier" max_length="40" name="sn_fin_supplier" type="collection">
+        <element choice="1" label="Duplicate broker profile" max_length="40" name="x_snc_pab_sup_mgt_duplicate_check" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="No"/>
+                <element inactive_on_update="false" label="Not applicable" sequence="2" value="na"/>
+            </choice>
+        </element>
+    </element>
+</database>
